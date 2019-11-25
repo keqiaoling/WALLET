@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white_bg">#ffffff</color>
+    <color name="white_text">#ffffff</color>
+    <color name="white_btext">#90ffffff</color>
+    <color name="black_text">#000000</color>
+    <color name="zise">#7761FF</color>
+    <color name="lanse">#5F3EF9</color>
+    <color name="textcolor">#999999</color>
+    <color name="textcolor2">#666666</color>
+    <color name="ed_bg">#F5F5F5</color>
+    <color name="pop_bg">#55000000</color>
+    <color name="line_bg">#15000000</color>
+    <color name="search_bg">#F7F8FA</color>
+    <color name="red_text">#F93E50</color>
+    <color name="gray_text">#636395</color>
+    <color name="fx_bg">#EEF2FF</color>
+    <color name="lvse_text">#18D78B</color>
+    <color name="hongse_text">#FA615C</color>
+    <color name="toumin">#00000000</color>
+    <color name="hangqin_bg">#4422E2</color>
+    <color name="li_bg">#F8F2FF</color>
+    <color name="chengse_q">#FFC170</color>
+    <color name="chengse_s">#FB882B</color>
+    <color name="sq_linebg">#EEEEEE</color>
+    <color name="sq_bg">#fdfdfd</color>
+    <color name="bidui_line">#BBBBBB</color>
+    <color name="tz_csbg">#FEF1F3</color>
+    <color name="tz_qgbg">#F1FEF9</color>
+    <color name="tz_vipbg">#FEF8F1</color>
+    <color name="zise_q">#AFA2FF</color>
+    <color name="zise_s">#7761FF</color>
+    <color name="paypass_bg">#D5D2E0</color>
+</resources>

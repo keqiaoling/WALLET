@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_bg"
+    tools:context=".zixun.activity.ZiXunInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@mipmap/back"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/text_zxxq"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_17" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/line_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black_text"
+        android:text="最全的区块链钱包分类，你的是哪一种？"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_16"
+            android:background="@drawable/zixun_bg"
+            android:textSize="@dimen/sp_12"
+            android:text="X-Wallet"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/lanse"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="8月15日"
+            android:layout_gravity="center"
+            android:textColor="@color/textcolor"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/textcolor2"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:lineSpacingExtra="@dimen/dp_10"
+        android:text="区块链钱包是用来存储用户数字资产的地方。它看起来简单，但仔细划分起来却门道很多噢。许多币圈老人用了很久的区块链钱包，却也同样搞不通它的分别。要知道，了解钱包的种类和特性，才能更好的存储自己的数字资产，给自己选择一个便捷的操作体验。通常为方便理解，技术人员将区块链钱包按一定功能或技术特征进行归类，可按以下6种方法分类：1、按区块链钱包是否联网，可分为冷钱包、热钱包冷钱包：也称为离线钱包。它通常以电子硬件的形式出现，用以保存用户钱包私钥并将之与网络隔离。通常情况下区块链冷钱包不主动联网，只有在有需要的时候进行手动联网，或通过其他设备联网。目前常见的冷钱包形式有纸质、U盘、小型硬盘、智能手表和其他智能存储硬件等。热钱包：也称为在线钱包。它通常以App或者网页平台的形式出现。它不像冷钱包那样可以自行制作，一般由第三方或服务商开发完成。用户必须通过网络才能访问热钱包，大部分情况下，热钱包私钥掌握在第三方或服务商手里，不由用户保管。"
+        android:layout_marginRight="@dimen/dp_15"/>
+</LinearLayout>

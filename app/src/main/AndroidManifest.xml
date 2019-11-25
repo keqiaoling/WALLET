@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Required -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".ZgwApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".wode.activity.YaoQingActivity"></activity>
+        <activity android:name=".wode.activity.GuanYuActivity" />
+        <activity android:name=".wode.activity.MiMaActivity" />
+        <activity android:name=".wode.activity.MingXiActivity" />
+        <activity android:name=".wode.activity.ShouYiActivity" />
+        <activity android:name=".wode.activity.FanKuiActivity" />
+        <activity android:name=".wode.activity.WenTiActivity" />
+        <activity android:name=".wode.activity.WoDeActivity" />
+        <activity android:name=".wode.activity.TuanDuiActivity" />
+        <activity android:name=".wode.activity.NameActivity" />
+        <activity android:name=".wode.activity.UserInfoActivity" />
+        <activity android:name=".faxian.activity.YouXiActivity" />
+        <activity android:name=".faxian.activity.SanShiTianActivity" />
+        <activity android:name=".faxian.activity.QiTianActivity" />
+        <activity android:name=".faxian.activity.LiJiTouZiActivity" />
+        <activity android:name=".faxian.activity.HeYueActivity" />
+        <activity android:name=".faxian.activity.BiDuiActivity" />
+        <activity android:name=".faxian.activity.SheQuActivity" />
+        <activity android:name=".faxian.activity.All_ListActivity" />
+        <activity android:name=".zixun.activity.ZiXunInfoActivity" />
+        <activity android:name=".faxian.activity.FaXianWebActivity" />
+        <activity android:name=".zichan.activity.TiBiInfoActivity" />
+        <activity android:name=".zichan.activity.ChongBiActivity" />
+        <activity android:name=".zichan.activity.TiBiActivity" />
+        <activity android:name=".zichan.activity.WalletInfoActivity" />
+        <activity android:name=".begin.activity.SetPayPassActivity" />
+        <activity android:name=".begin.activity.SetLoginPassActivity" />
+        <activity android:name=".begin.activity.QuHaoActivity" />
+        <activity android:name=".begin.activity.CodeActivity" />
+        <activity android:name=".begin.activity.EmailRegisterActivity" />
+        <activity android:name=".begin.activity.EmailLoginActivity" />
+        <activity android:name=".begin.activity.ForgetActivity" />
+        <activity android:name=".begin.activity.PhoneRegisterActivity" />
+        <activity android:name=".begin.activity.LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".begin.activity.GuiDeActivity" />
+
+        <service android:name=".begin.DownloadService" />
+
+        <activity android:name=".begin.activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myapplication.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="true" />
+    </application>
+
+</manifest>

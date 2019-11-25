@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".begin.activity.QuHaoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_18"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_left_back"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_50"
+            android:background="@drawable/searchb_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_search"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:src="@mipmap/image_search"/>
+
+            <EditText
+                android:id="@+id/ed_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/black_text"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/lanse"
+            android:text="@string/text_quxiao"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/line_bg"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

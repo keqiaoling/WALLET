@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white_bg"
+    tools:context="com.example.myapplication.hangqin.fragment.HangQinFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_125"
+        android:background="@mipmap/image_hqbg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_17"
+                android:text="@string/tab_hangqin"
+                android:textColor="@color/white_text"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_28"
+            app:tabIndicatorHeight="@dimen/dp_0"
+            app:tabIndicatorColor="@color/lanse"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_30"
+            app:tabMode="scrollable"
+            app:tabMaxWidth="@dimen/dp_0"
+            app:tabMinWidth="@dimen/dp_0"
+            app:tabPaddingBottom="-1dp"
+            app:tabPaddingEnd="-1dp"
+            app:tabPaddingStart="-1dp"
+            app:tabPaddingTop="-1dp"/>
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
